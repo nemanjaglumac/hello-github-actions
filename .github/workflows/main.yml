@@ -5,6 +5,7 @@ on:
 
 jobs:
   build:
+    if: github.event.pull_request.draft == false
     name: Hello World action
     runs-on: ubuntu-latest
     steps:
